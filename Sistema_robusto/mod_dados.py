@@ -24,7 +24,7 @@ def sanitizar_nome_arquivo(nome_disciplina):
 
 # dados dos arquivos já existentes
 def carregar_dados_existentes():
-    """Lê os arquivos .txt e popula a lista 'alunos_cadastrados' com os dados existentes."""
+    "Lê os arquivos .txt e popula a lista 'alunos_cadastrados' com os dados existentes."
     print("Carregando dados...")
     time.sleep(1)
     temp_alunos = {} # dicionário com RA para evitar duplicatas
@@ -90,7 +90,7 @@ def validar_nota(texto_usuario):
             print("Erro: Por favor, digite um número válido.")
 
 def validar_nome():
-    """Pede e valida o nome do aluno, garantindo que não tenha números e não seja vazio."""
+    "Pede e valida o nome do aluno, garantindo que não tenha números e não seja vazio."
     while True:
         nome = input("Nome completo do aluno: ").strip()
         if not nome:

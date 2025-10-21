@@ -8,7 +8,7 @@ import mod_aluno
 def main():
     "Função principal que executa o menu de perfis."
 
-    # Verificar se o arquivo dos professores existe
+    # Verifica se o arquivo dos professores existe
     if not os.path.exists("professores.txt"):
         with open("professores.txt", "w", encoding="utf-8") as f:
             f.write("admin;admin123\n")
