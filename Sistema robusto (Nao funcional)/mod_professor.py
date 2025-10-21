@@ -10,6 +10,7 @@ def login_professor():
         return False
         
     usuario = input("Usuário do professor: ")
+    print("Obs: Sua senha permaneçe oculta por questões de segurança.")
     senha = getpass.getpass("Senha: ")
     
     with open("professores.txt", 'r', encoding='utf-8') as f:
